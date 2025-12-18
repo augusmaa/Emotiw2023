@@ -185,3 +185,6 @@ If you use this repository/code in your research, please cite:
   pages={750--754},
   year={2023}
 }
+```
+## License
+This project is licensed under the MIT License — see the LICENSE file for details.
