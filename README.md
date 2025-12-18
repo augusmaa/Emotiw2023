@@ -22,7 +22,6 @@ This repository contains my winning solution for the **EmotiW 2023** challenge (
 
 
 
-
 The training pipeline uses precomputed tensors (.pt) for video frames and audio spectrogram frames.
 
 It supports training emotion classifiers using:
