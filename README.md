@@ -1,5 +1,8 @@
 
 # EmotiW 2023 – Audio/Video Emotion Recognition (Cross-Attention Fusion)
+## 🏆 EmotiW 2023 Winner
+
+This repository contains my winning solution for the **EmotiW 2023** challenge (ACM ICMI 2023, Paris), for the **Audio-Visual Group-based Emotion Recognition** track.  
 
 ## Method Overview
 
@@ -7,9 +10,6 @@
   <img src="images/emotiw_arc.png" alt="Cross-Attnetion Fusion architecture" width="800">
 </p>
 
-## 🏆 EmotiW 2023 Winner
-
-This repository contains my winning solution for the **EmotiW 2023** challenge (ACM ICMI 2023, Paris), for the **Audio-Visual Group-based Emotion Recognition** track.  
 
 ## 📄 Paper
 
@@ -88,7 +88,6 @@ python scripts/train.py --train_corpus fusion
 You can set the parent directory once:
 
 - --dir_data_parent /path/to/VGAF/
-
 
 ### Frames (temporal sampling)
 
@@ -183,6 +182,22 @@ Example:
 ```bash
 tensorboard --logdir runs/tb
 ```
+
+
+### Synthetic  data generation
+
+To generate synthetic video frames you can follow this example:
+```bash
+python scripts/generate_synthetic_frames.py \
+  --bg_root /... \
+  --faces_root /... \
+  --out_dir /... \
+  --label Positive \
+  --videos_per_bg 200 \
+  --frames_per_video 75 \
+  --overwrite
+```
+
 
 ## Citation
 
