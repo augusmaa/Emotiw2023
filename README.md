@@ -1,7 +1,30 @@
 
 # EmotiW 2023 – Audio/Video Emotion Recognition (Cross-Attention Fusion)
 
-This repository contains my submission code for the EmotiW 2023 challenge.
+## Method Overview
+
+<p align="center">
+  <img src="images/emotiw_arc.png" alt="Cross-Attnetion Fusion architecture" width="800">
+</p>
+
+## 🏆 EmotiW 2023 Winner
+
+This repository contains my winning solution for the **EmotiW 2023** challenge (ACM ICMI 2023, Paris), for the **Audio-Visual Group-based Emotion Recognition** track.  
+
+## 📄 Paper
+
+**Multimodal group emotion recognition in-the-wild using privacy-compliant features** (ICMI 2023)
+
+- arXiv: https://arxiv.org/abs/2312.05265
+- HAL (PDF): https://hal.science/hal-04325815v1/file/MgEmoR-pcf-Emotiw2023.pdf
+- ACM DL (DOI): https://dl.acm.org/doi/10.1145/3577190.3616546
+
+
+
+
+
+The training pipeline uses precomputed tensors (.pt) for video frames and audio spectrogram frames.
+
 It supports training emotion classifiers using:
 
 - Audio only
@@ -10,15 +33,6 @@ It supports training emotion classifiers using:
 
 - Audio–Video fusion with Cross-Attention (query = audio, key/value = video)
 
-
-## Method Overview
-
-<p align="center">
-  <img src="images/emotiw_arc.png" alt="Cross-Attnetion Fusion architecture" width="800">
-</p>
-
-
-The training pipeline uses precomputed tensors (.pt) for video frames and audio spectrogram frames.
 
 ## Repository structure
 ```bash emotiw2023/
