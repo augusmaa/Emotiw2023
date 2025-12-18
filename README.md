@@ -19,9 +19,7 @@ This repository contains my winning solution for the **EmotiW 2023** challenge (
 - HAL (PDF): https://hal.science/hal-04325815v1/file/MgEmoR-pcf-Emotiw2023.pdf
 - ACM DL (DOI): https://dl.acm.org/doi/10.1145/3577190.3616546
 
-
-
-
+---
 The training pipeline uses precomputed tensors (.pt) for video frames and audio spectrogram frames.
 
 It supports training emotion classifiers using:
