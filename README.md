@@ -60,20 +60,6 @@ The dataloader expects torch tensors (.pt) already saved on disk:
 
 - .../<Vid_name>.mp4.spec.<NB_FRAMES_AUDIO>.pt
 
-## Labels
-
-Two text files (space-separated), typically:
-
-- Train_labels.txt
-
-- Val_labels.txt
-
-with at least these columns:
-
-- Vid_name
-
-- Label (values: 1,2,3 → mapped internally to 0)
-
 ## Training 
 ### Main Entrypoin
 
@@ -117,10 +103,6 @@ To use flattening instead:
 If training collapses, you can resume from the last saved checkpoint:
 
 - --resume_from path/to/checkpoint.pt
-
-If you are still using the legacy script style:
-
-- --resume True and --start_epoch <value>
 
 ### GPU selection
 
