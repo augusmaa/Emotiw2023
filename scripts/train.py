@@ -106,7 +106,7 @@ def main():
             dropout_att=args.dropout_att,
             num_heads_cross=args.num_heads_crossatt,
         )
-        train_ds = build_train_dataset(vgaf_train, vgaf_train, labels_train, synt_root, synt_root,
+        train_ds = build_train_dataset(vgaf_train, vgaf_train, labels_train, synt_root, synt_root, # we use vgaf_train twice because the same director path is for audio and video, the difference is the extention
                                        args.nb_frames_video, args.nb_frames_audio, args.synt_rate, seed=args.seed)
         val_ds = build_val_dataset(vgaf_val, vgaf_val, labels_val, args.nb_frames_video, args.nb_frames_audio)
         mode = "fusion"

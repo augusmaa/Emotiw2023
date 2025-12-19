@@ -179,7 +179,7 @@ python scripts/generate_synthetic_frames.py \
   --frames_per_video 75 \
   --overwrite
 ```
-
+Note: There is no synthetic data for audio, to make the balance we use the read audio data in the path of $synt\_audio$
 
 ## Citation
 
